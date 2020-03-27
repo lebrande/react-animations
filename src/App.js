@@ -12,6 +12,24 @@ function App() {
         {show && (
           <motion.div
             className="Circle"
+            initial={{
+              y: 250,
+              scale: 0,
+            }}
+            animate={{
+              y: 50,
+              scale: 1,
+              transition: {
+                duration: 1,
+              },
+            }}
+            exit={{
+              y: 250,
+              scale: 0,
+              transition: {
+                duration: 1,
+              },
+            }}
           />
         )}
       </AnimatePresence>
