@@ -6,4 +6,10 @@
   height: 100px;
   background-color: crimson;
   border-radius: 50%;
+  transition: top 1s, transform 1s;
+}
+
+.Circle--animated {
+  top: 250px;
+  transform: scale(0);
 }
